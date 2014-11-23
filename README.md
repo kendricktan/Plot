@@ -1,17 +1,17 @@
 Plot
 ====
 
-Plots graphs in 3D
+Plot is a plotting/graphing tool that plots/graphs in 3D. <br/>
 Might or might not add imaginary/complex graphs that graphs dynamically, but at the moment it's pretty crappy.
 
 Libraies used:
   - ExprTK for parsing and evaluation maths equations
   - OpenGL and GLUT for graphics
   
-/* Important! */
+/* Important! */ <br/>
   - glu32.dll must be in the same folder as Plot.exe
 
-/* To do list */
-1. Convert graphs to Argand diagram
-2. Fix up quadratic/ cubic imaginary graphs (make them a bit more dynamic)
-3. Clean up code (it's very messy atm and unreadable)
+/* To do list */ <br/>
+1. Convert graphs to Argand diagram <br/>
+2. Fix up quadratic/ cubic imaginary graphs (make them a bit more dynamic) <br/>
+3. Clean up code (it's very messy atm and unreadable) <br/>
