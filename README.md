@@ -6,8 +6,7 @@ Plot - Plot 3D graphs!
 - Ctrl + Left click to zoom in/out
 - Right click to pan
 
-<strong>What is Plot?</strong><br/>
-
+<strong>What is Plot?</strong>
 Plot is an open source plotting/graphing tool that plots/graphs in 3D. <br/>
 Might or might not add imaginary/complex graphs that graphs dynamically, but at the moment it's pretty crappy.
 
