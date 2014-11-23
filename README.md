@@ -1,7 +1,7 @@
 Plot
 ====
 
-Plots graphs in 3D
+Plots graphs in 3D\n
 Might or might not add imaginary/complex graphs that graphs dynamically, but at the moment it's pretty crappy.
 
 Libraies used:
