@@ -109,7 +109,7 @@ namespace Plot {
 	private: System::Windows::Forms::ToolStripMenuItem^  graphPropertiesToolStripMenuItem;
 	private: System::Windows::Forms::RadioButton^  cubicRadio;
 	private: System::Windows::Forms::RadioButton^  quadraticRadio;
-	private: System::Windows::Forms::Button^  argandButton;
+
 	private: GraphProperties^ graphProperties;
 
 #pragma region Windows Form Designer generated code
@@ -160,7 +160,6 @@ namespace Plot {
 			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tutorialToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->argandButton = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
@@ -191,6 +190,7 @@ namespace Plot {
 			this->equationTextbox->Name = L"equationTextbox";
 			this->equationTextbox->Size = System::Drawing::Size(283, 22);
 			this->equationTextbox->TabIndex = 2;
+			this->equationTextbox->Text = L"y=cos(x)+sin(z)";
 			this->equationTextbox->TextChanged += gcnew System::EventHandler(this, &MainForm::equationTextbox_TextChanged);
 			this->equationTextbox->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MainForm::equationTextbox_KeyPress);
 			// 
@@ -215,7 +215,6 @@ namespace Plot {
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->argandButton);
 			this->groupBox1->Controls->Add(this->toggleColorButton);
 			this->groupBox1->Controls->Add(this->removeSelectedButton);
 			this->groupBox1->Controls->Add(this->clearAllButton);
@@ -265,7 +264,7 @@ namespace Plot {
 			this->graphListView->LabelWrap = false;
 			this->graphListView->Location = System::Drawing::Point(6, 21);
 			this->graphListView->Name = L"graphListView";
-			this->graphListView->Size = System::Drawing::Size(184, 293);
+			this->graphListView->Size = System::Drawing::Size(184, 322);
 			this->graphListView->TabIndex = 0;
 			this->graphListView->UseCompatibleStateImageBehavior = false;
 			this->graphListView->View = System::Windows::Forms::View::List;
@@ -539,23 +538,16 @@ namespace Plot {
 			// aboutToolStripMenuItem
 			// 
 			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
-			this->aboutToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->aboutToolStripMenuItem->Size = System::Drawing::Size(134, 22);
 			this->aboutToolStripMenuItem->Text = L"About";
+			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::aboutToolStripMenuItem_Click);
 			// 
 			// tutorialToolStripMenuItem
 			// 
 			this->tutorialToolStripMenuItem->Name = L"tutorialToolStripMenuItem";
-			this->tutorialToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->tutorialToolStripMenuItem->Size = System::Drawing::Size(134, 22);
 			this->tutorialToolStripMenuItem->Text = L"How to use";
-			// 
-			// argandButton
-			// 
-			this->argandButton->Location = System::Drawing::Point(5, 320);
-			this->argandButton->Name = L"argandButton";
-			this->argandButton->Size = System::Drawing::Size(185, 23);
-			this->argandButton->TabIndex = 4;
-			this->argandButton->Text = L"Convert selected to Argand";
-			this->argandButton->UseVisualStyleBackColor = true;
+			this->tutorialToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::tutorialToolStripMenuItem_Click);
 			// 
 			// MainForm
 			// 
@@ -630,6 +622,12 @@ private: System::Void quadraticRadio_CheckedChanged(System::Object^  sender, Sys
 }
 private: System::Void cubicRadio_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 	complexTxtbox3->Text = "3";
+}
+private: System::Void aboutToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	MessageBox::Show("Plot v1.0 - Made by Kendrick Tan for IB Computer Science IA 2015");
+}
+private: System::Void tutorialToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	MessageBox::Show("To plot: Type in any equation you'd like to plot with the variables x, y, or z into the textbox and press plot!\nControls: right click and drag to rotate, hold ctrl and right click and drag to zoom, left click and drag to pan!\n");
 }
 };
 }

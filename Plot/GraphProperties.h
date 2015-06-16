@@ -197,6 +197,7 @@ namespace Plot {
 			this->MinimizeBox = false;
 			this->Name = L"GraphProperties";
 			this->Text = L"Graph Properties";
+			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &GraphProperties::GraphProperties_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &GraphProperties::GraphProperties_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -216,6 +217,10 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	maxView.z = (float)Convert::ToInt32(textBox6->Text);
 }
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+	this->Visible = false;
+}
+private: System::Void GraphProperties_FormClosing(System::Object^  sender, System::Windows::Forms::FormClosingEventArgs^  e) {
+	e->Cancel = true;
 	this->Visible = false;
 }
 };

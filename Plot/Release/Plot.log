@@ -1,0 +1,24 @@
+﻿Build started 6/9/2015 9:52:00 AM.
+     1>Project "D:\Coding\Projects\GitHub\Plot\Plot\Plot.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\Coding\Libraries\\glm\glm /ID:\Coding\Libraries\\glut /ID:\Coding\Libraries\\glfw\include\GLFW /ID:\Coding\Libraries\\glew\include /ID:\Coding\Libraries\\glew\bin\Release\Win32 /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib /bigobj MainForm.cpp
+         MainForm.cpp
+     1>d:\coding\projects\github\plot\plot\Functions.h(129): warning C4101: 'zFix' : unreferenced local variable
+                 MainForm.cpp(178) : see reference to function template instantiation 'void parseComplexEquationCubic<float>(std::string,T)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Coding\Projects\GitHub\Plot\Release\Plot.exe" /INCREMENTAL:NO /NOLOGO openGL32.lib glew32.lib glu32.lib gdi32.lib User32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Release\Plot.GraphProperties.resources /ASSEMBLYRESOURCE:Release\Plot.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Coding\Projects\GitHub\Plot\Release\Plot.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Plot.res
+         Release\Graphing.obj
+         Release\GraphProperties.obj
+         Release\MainForm.obj
+         Release\OpenGL.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Plot.vcxproj -> D:\Coding\Projects\GitHub\Plot\Release\Plot.exe
+     1>Done Building Project "D:\Coding\Projects\GitHub\Plot\Plot\Plot.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:22.81

@@ -119,14 +119,14 @@ void parseComplexEquation(string expression_string, T xPos){
 
 		graphList[curGraphNo].complexCoordinates[i].x = x;
 		graphList[curGraphNo].complexCoordinates[i].y = y;
-		graphList[curGraphNo].complexCoordinates[i].z = z;
+		graphList[curGraphNo].complexCoordinates[i].z = z-xPos;
 		i++;
 	}
 }
 
 template <typename T>
 void parseComplexEquationCubic(string expression_string, T xPos){
-	T x, y, z;
+	T x, y, z, zFix;
 
 	exprtk::symbol_table<T> symbol_table;
 	symbol_table.add_variable("x", x);
@@ -151,7 +151,7 @@ void parseComplexEquationCubic(string expression_string, T xPos){
 
 		graphList[curGraphNo].complexCoordinatesCubic[i].x = x;
 		graphList[curGraphNo].complexCoordinatesCubic[i].y = y;
-		graphList[curGraphNo].complexCoordinatesCubic[i].z = z;
+		graphList[curGraphNo].complexCoordinatesCubic[i].z = z-xPos;
 		i++;
 	}
 
@@ -184,8 +184,5 @@ float unifRand(){
 float randomFloat(float min, float max) {
 	return (max - min)*unifRand() + min;
 }
-
-// Takes screenshot
-
 
 #endif

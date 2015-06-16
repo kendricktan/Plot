@@ -1,0 +1,18 @@
+﻿Build started 3/6/2015 12:51:24 PM.
+     1>Project "D:\Coding\Projects\GitHub\Plot\Plot\Plot.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\Coding\Libraries\\glm\glm /ID:\Coding\Libraries\\glut /ID:\Coding\Libraries\\glfw\include\GLFW /ID:\Coding\Libraries\\glew\include /ID:\Coding\Libraries\\glew\bin\Release\Win32 /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib /bigobj MainForm.cpp
+         MainForm.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Coding\Projects\GitHub\Plot\Debug\Plot.exe" /INCREMENTAL /NOLOGO openGL32.lib glew32.lib glu32.lib gdi32.lib User32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\Plot.GraphProperties.resources /ASSEMBLYRESOURCE:Debug\Plot.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Coding\Projects\GitHub\Plot\Debug\Plot.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Plot.res
+         Debug\Graphing.obj
+         Debug\GraphProperties.obj
+         Debug\MainForm.obj
+         Debug\OpenGL.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Plot.vcxproj -> D:\Coding\Projects\GitHub\Plot\Debug\Plot.exe
+     1>Done Building Project "D:\Coding\Projects\GitHub\Plot\Plot\Plot.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:54.92

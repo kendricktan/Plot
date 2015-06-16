@@ -9,23 +9,23 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Form">
+    <Filter Include="Header">
+      <UniqueIdentifier>{bdcd2734-2add-45e6-b6f4-6ee45560e4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Header">
-      <UniqueIdentifier>{bdcd2734-2add-45e6-b6f4-6ee45560e4e1}</UniqueIdentifier>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{7ff9852b-cc38-4586-8c84-61ab79ccedfc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
-      <Filter>Form</Filter>
+      <Filter>GUI</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="exprtk.hpp">
-      <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL.h">
       <Filter>Header</Filter>
@@ -37,7 +37,10 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="GraphProperties.h">
-      <Filter>Form</Filter>
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="exprtk.hpp">
+      <Filter>Lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
+      <Filter>Resource</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphProperties.resx">
       <Filter>Resource</Filter>
     </EmbeddedResource>
   </ItemGroup>

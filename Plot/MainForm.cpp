@@ -61,6 +61,8 @@ Void MainForm::equationTextbox_KeyPress(System::Object^  sender, System::Windows
 }
 
 Void MainForm::plotButton_Click(System::Object^  sender, System::EventArgs^  e){
+	
+
 	// Check if graph is complex graph
 	graphList[curGraphNo].isComplex = isComplexCheckBox->Checked;
 	graphList[curGraphNo].isComplexCubic = cubicRadio->Checked;
@@ -99,6 +101,20 @@ Void MainForm::plotButton_Click(System::Object^  sender, System::EventArgs^  e){
 		std::transform(str.begin(), str.end(), str.begin(), ::tolower);	// Converts to lowercase
 		removeWhitespace(str);
 		strPlace = str.find("=");
+
+		// Checks if there is any '=', if not then prompts the user to enter for one
+		if (strPlace == -1){
+			MessageBox::Show("Could not find a '=' sign in the equation given. Please recheck the inputted equation.");
+			return;
+		}
+
+		// If first place isn't x, y, or z then parsing WILL fail, therefore prompt user
+		// and exit
+		/*if (!str.at(0).Equals("x") && !str.at(0).Equals("y") && !str.at(0).Equals("z")){
+			MessageBox::Show("Incorrect maths equation format. Please use a format like: 'y=sin(x)+cos(z)'");
+			return;
+		}*/
+
 		strSubject = str.substr(0, strPlace);
 		strEquation = str.substr(strPlace + 1);
 
@@ -150,8 +166,8 @@ Void MainForm::plotButton_Click(System::Object^  sender, System::EventArgs^  e){
 		xPos = -xPos;
 
 		str = "(" + strOne + "x+" + strTwo + ")^" + strThree + "+" + strFour;
-		strComplex = "(" + strOne + "z+" + strTwo + ")^" + strThree + "+" + strFour;
-		strComplexCubic = "-(" + strOne + "z+" + strTwo + ")^" + strThree + "+" + strFour;
+		strComplex = "(" + strOne + "z+" + strTwo + ")^2+" + strFour;
+		strComplexCubic = "-(" + strOne + "z+" + strTwo + ")^2+" + strFour;
 
 		removeWhitespace(str);
 		removeWhitespace(strComplex);

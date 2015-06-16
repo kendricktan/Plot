@@ -1,0 +1,49 @@
+  Plot.GraphProperties.resources - Embedded, ContainedInManifestFile, 
+  Plot.MainForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Plot, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Plot.GraphProperties: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class OpenGLForm.COpenGL: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.NativeWindow
+    Void .ctor(System.Windows.Forms.GroupBox, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    SwapOpenGLBuffers(): PrivateScope, Public, HideBySig
+    Render(): PrivateScope, Public, HideBySig
+    MouseEvents(Label, GroupBox): PrivateScope, Public, HideBySig
+    cameraViewLabel(ToolStripStatusLabel): PrivateScope, Public, HideBySig
+    getHDC(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Plot.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    plotButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    timer1_Tick(Object, EventArgs): PrivateScope, Public, HideBySig
+    debugButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    defaultView_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    graphDensityBar_Scroll(Object, EventArgs): PrivateScope, Public, HideBySig
+    decreaseView_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    increaseView_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    clearAllButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    toggleColorButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    removeSelectedButton_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    isComplexCheckBox_CheckedChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    copyToClipboardToolStripMenuItem_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    equationTextbox_KeyPress(Object, KeyPressEventArgs): PrivateScope, Public, HideBySig
